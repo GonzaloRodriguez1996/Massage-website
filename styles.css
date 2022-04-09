@@ -1,123 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
 
-*{
-font-family: Manrope;
+* {
+  font-family: Manrope;
 }
 
-.carousel-caption{
-    transform:translateY(-50%);
+html {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.carousel-caption {
+  transform: translateY(-50%);
+  bottom: initial;
+  top: 70%;
+  font-size: 200%;
+  left: 0;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-caption {
+    transform: translateY(-50%);
     bottom: initial;
-    top: 70%;
-    font-size: 200%;
-    left: 0;
+    margin: -23% auto;
+    font-size: 100%;
+
     width: 100vw;
-  
-   
-}
-.carousel-caption p{
-    color: rgb(0, 0, 0);
-    font-size: 1.5em;
-    margin-bottom: 18%;
-    
-    
+  }
 }
 
-
-.carousel-item{
-    height: 100vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size:cover;
-    background-size:cover;
-    z-index: -1;
-    
-
-}
-.social-menu ul{
-    position: absolute;
-    top: 90%;
-    left:87%;
-    padding: 0px;
-    margin: 1.5rem;
-    margin-left: 4.5rem;
-    transform: translate(-50%, -50%);
-    display: flex;
+.carousel-caption p {
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  margin-bottom: 18%;
 }
 
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+}
+.social-menu ul {
+  position: absolute;
+  top: 90%;
+  left: 87%;
+  padding: 0px;
+  margin: 1.5rem;
+  margin-left: 4.5rem;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
 
 .social-menu ul li {
-    list-style:none;
-    margin: 0 15px;
-    font-size:30px;
-    line-height: 60px;
-    transition: .6s;
-    }
-
-    .social-menu ul li a {
-        position: relative;
-        display: block;
-        width: 3.5rem;
-        height: 3.5rem;
-       border-radius: 50%;
-       background-color: #ffffff;
-       text-align: center;
-       transition: .6s;
-       box-shadow:0 5px 4px rgba(0,0,0,.5);
-    }
-    .social-menu ul li a:hover {
-        transform: translate(0, -10px);
-        color: #ffffff;
-    }
-
-
-
-.nav-item{
- font-size: 120%;
- font-family: Manrope;
- 
- 
+  list-style: none;
+  margin: 0 15px;
+  font-size: 30px;
+  line-height: 60px;
+  transition: 0.6s;
 }
-.nav-item:hover{
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+  transform: translate(0, -10px);
+  color: #ffffff;
+}
+
+.nav-item {
+  font-size: 120%;
+  font-family: Manrope;
+}
+.nav-item:hover {
   background-color: rgba(121, 199, 195, 0.904);
   transition: 0.8s;
 }
 
-#form-container{
-    width: 45vw;
-    height: 75vh;
-    margin-top: 5.5rem;
-    position: fixed;
-    margin-left: 25vw;
-    background-color: white;
-    border-radius: 20px;
-    
+#form-container {
+  width: 45vw;
+  height: 75vh;
+  margin-top: 5.5rem;
+  position: fixed;
+  margin-left: 25vw;
+  background-color: white;
+  border-radius: 20px;
 }
 
-form{
-    width: 80%;    
+form {
+  width: 80%;
   margin-top: 2rem;
   margin-left: 10%;
- 
-  
 }
 
-input{
-    width: 20px;
+input {
+  width: 20px;
 }
 
-button{
-	font-size: 15px;
-    font-weight: bold;
-   	background-color: rgba(121, 199, 195, 0.904);
-	color: #fff;
-	border: 0px;
-	border-radius: 5px;
-	padding: 10px;
-	cursor: pointer;
-	margin-top: 2vh;
+button {
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgba(121, 199, 195, 0.904);
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 2vh;
 }
 
-#container{
+#container {
   background-color: #fff;
   margin-top: 10rem;
   width: 45rem;
@@ -125,104 +127,81 @@ button{
   margin-left: 23%;
 }
 
-#container h1{
-    font-size: 2rem;
-    margin-top: 10rem;
+#container h1 {
+  font-size: 2rem;
+  margin-top: 10rem;
 }
 
-#container p{
-    font-size: 1rem;
-    margin-top: 3rem;
-
+#container p {
+  font-size: 1rem;
+  margin-top: 3rem;
 }
 
-
-
-#backgroundimg{
-    background-image: url("https://www.yourhealth.net.au/wp-content/uploads/2014/09/Woman-having-massage-in-the-spa-salon.jpg");
+#backgroundimg {
+  background-image: url("https://www.yourhealth.net.au/wp-content/uploads/2014/09/Woman-having-massage-in-the-spa-salon.jpg");
 }
 
-#backgroundimg2{
-    background-image: url("https://www.scandinave.com/app/uploads/sites/3/2021/01/web-massage-header-1.jpg");
+#backgroundimg2 {
+  background-image: url("https://www.scandinave.com/app/uploads/sites/3/2021/01/web-massage-header-1.jpg");
 }
 
-
-@media only screen and (max-width : 768px) {
-   
-    nav{
-        z-index: 1;
-    }
-    .nav-item{
-        background-color: rgb(226, 241, 239);
-    }
-
-    #locationIcon{
-        width: 2vh;
-        filter: invert(26%) sepia(56%) saturate(4744%) hue-rotate(350deg) brightness(82%) contrast(90%);
-    }
-
-    .carousel-item{
-        margin-top: 10vh;
-        height: 0vh;
-        position: relative;
-        
-    }
-
-#txt1{
-    margin-top: 40vh;
-    color: rgb(255, 255, 255);
-    margin-top: 50vh;
-    margin-left: 20vw;
-    position: absolute;
+@media only screen and (max-width: 768px) {
+  nav {
     z-index: 1;
-    transition: 5s;
-   
-}   
-#form-container{
+  }
+  .nav-item {
+    background-color: rgb(226, 241, 239);
+  }
+
+  #locationIcon {
+    width: 2vh;
+    filter: invert(26%) sepia(56%) saturate(4744%) hue-rotate(350deg)
+      brightness(82%) contrast(90%);
+  }
+
+  .carousel-item {
+    margin-top: 10vh;
+    height: 0vh;
+    position: relative;
+  }
+
+  #form-container {
     width: 70%;
     height: 80vh;
     margin-top: 6rem;
     margin-left: 10vw;
-    
-}
+  }
 
-.social-menu ul{
+  .social-menu ul {
     position: absolute;
     top: 90%;
-    left:87%;
+    left: 87%;
     padding: 0px;
     margin: 1.5rem;
     margin-left: -2rem;
     transform: translate(-50%, -50%);
     display: flex;
-}
-.carousel-item{
+  }
+  .carousel-item {
     margin: 0 auto;
     height: 100vh;
     width: 100vw;
     z-index: -1;
-
-}
-.carousel-item img{
+  }
+  .carousel-item img {
     height: 100vh;
     object-fit: cover;
+  }
 
-
-}
-
-#container{
-    
-    margin-top: 10rem;
-    width: 25rem;
+  #container {
+    width: 19rem;
     border-radius: 8px;
-    margin-left: 3rem;
+    margin: -4rem auto;
   }
 }
 
-
-
-@media only screen and (min-width : 768px) {
-    .nav-link.active.text-white{
-        background-color: rgba(121, 199, 195, 0.904);
-    }
+@media only screen and (min-width: 768px) {
+  .nav-link.active.text-white {
+    background-color: rgba(121, 199, 195, 0.904);
+  }
 }
